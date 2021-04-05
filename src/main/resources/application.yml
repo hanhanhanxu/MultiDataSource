@@ -1,0 +1,17 @@
+
+spring:
+ # 数据源配置
+  datasource:
+    ds1: #数据源1
+      driver-class-name: com.mysql.cj.jdbc.Driver # mysql的驱动你可以配置别的关系型数据库
+      url: jdbc:mysql://localhost:3307/okmijn?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+      username: root # 用户名
+      password: xxxxxx # 密码
+    ds2: # 数据源2
+      driver-class-name: com.mysql.cj.jdbc.Driver # mysql的驱动你可以配置别的关系型数据库
+      url: jdbc:mysql://localhost:3307/mbtest?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+      username: root # 用户名
+      password: xxxxxx# 密码
+
+server:
+  port: 8071
